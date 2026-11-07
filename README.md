@@ -126,12 +126,12 @@ In a short `NOTES.md`, answer in a few sentences each:
 
 ### Definition of done
 
-- [x] `claude --version` runs (installed and signed in)
-- [x] `CLAUDE.md` committed at the project root with a description, 2+ commands, 2+ conventions, and an architecture note
-- [x] No secrets, no pasted long documents, and no one-off tasks in the `CLAUDE.md`
-- [x] `.claude/settings.json` committed with at least one allow rule and one deny rule
-- [x] `/memory` shows the `CLAUDE.md` loaded and `/permissions` shows your rules (mention this in `NOTES.md`)
-- [x] `NOTES.md` committed with your reasoning
+- [ ] `claude --version` runs (installed and signed in)
+- [ ] `CLAUDE.md` committed at the project root with a description, 2+ commands, 2+ conventions, and an architecture note
+- [ ] No secrets, no pasted long documents, and no one-off tasks in the `CLAUDE.md`
+- [ ] `.claude/settings.json` committed with at least one allow rule and one deny rule
+- [ ] `/memory` shows the `CLAUDE.md` loaded and `/permissions` shows your rules (mention this in `NOTES.md`)
+- [ ] `NOTES.md` committed with your reasoning
 
 ### Submit
 
@@ -152,9 +152,9 @@ In a short `NOTES.md`, answer in a few sentences each:
 
 Before you submit, make sure that:
 
-- [x] only the intended files are in the PR — no secrets, and no `.claude/settings.local.json`
-- [x] every line in your `CLAUDE.md` earns its place
-- [x] your `NOTES.md` explains your choices
+- [ ] only the intended files are in the PR — no secrets, and no `.claude/settings.local.json`
+- [ ] every line in your `CLAUDE.md` earns its place
+- [ ] your `NOTES.md` explains your choices
 
 ---
 
