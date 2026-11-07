@@ -6,6 +6,7 @@ A small Express REST API for users, backed by an in-memory store; the starter pr
 
 ## Commands
 
+- `npm install`: install dependencies; run this first on a fresh clone, or `npm test` and `npm run lint` will fail
 - `npm run dev`: start the API with auto-restart on http://localhost:3000
 - `npm test`: run all tests with Node's built-in runner
 - `node --test tests/users.test.js`: run one test file
@@ -23,5 +24,5 @@ A small Express REST API for users, backed by an in-memory store; the starter pr
 
 - `server.js` builds the app, mounts each router, and exports `app`. Keep the `require.main === module` guard around `listen`, because tests import `app` without opening a port.
 - `routes/` has one Express router per resource. A new resource needs its own file and an `app.use` mount in `server.js`.
-- `db/store.js` holds state in module variables. Data resets on restart and persists between tests in the same file, so tests must not assume a pristine store after a `POST`.
+- `db/store.js` holds state in module variables. Data resets on restart and persists between tests in the same file, so tests must not assume a pristine store after a `POST`. Store getters return live references, so copy results before sorting or changing them in a route.
 - Nothing loads `.env` automatically: `PORT` comes from the real process environment and defaults to 3000.

@@ -20,7 +20,7 @@ These rules have limits. `Read(./.env)` only blocks the Read tool, not a shell c
 
 ## Verification
 
-- [ ] `claude --version`:
-- [ ] `/memory` shows `CLAUDE.md` loaded:
-- [ ] `/permissions` shows the allow, ask, and deny rules:
-- [ ] "How do I run the tests here?" is answered from `CLAUDE.md`:
+- [x] `claude --version`: `2.1.302 (Claude Code)`
+- [x] `/memory` shows `CLAUDE.md` loaded: yes, `CLAUDE.md` is listed.
+- [x] `/permissions` shows the allow, ask, and deny rules: ask shows both `git push` rules and deny shows all 5 rules. Allow shows 4 of the 6 rules: the two `node --test` rules are not listed, though a fresh `claude -p` session still ran `node --test` without being blocked.
+- [x] "How do I run the tests here?" is answered from `CLAUDE.md`: yes. A fresh `claude -p` session in the project folder, with tools disabled, cited `CLAUDE.md` and gave `npm test` plus the single-file and name-pattern commands.
